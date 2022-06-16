@@ -1,50 +1,75 @@
-@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
-
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
 body{
-    width: 100vw;
-    height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-family: 'Bebas Neue', cursive;
-    background-color: #F5F5F5;
+    font-family: Montserrat, sans-serif;
+    background: #28223f;
+  }
+  a:hover, a:visited, a:link, a:active
+{
+    text-decoration: none;
 }
-
-.card {
+  .container{
+    user-select: none;
+    margin: 100px auto;
+    background: #231e39;
+    color: #b3b8cd;
+    border-radius: 5px;
     width: 350px;
-    height: 450px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
     text-align: center;
-    padding: 50px;
-    border-radius: 10px;
-    overflow: hidden;
-    box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
-}
-
-.card img{
-    width: 180px;
-    height: 180px;
+    box-shadow: 0 10px 20px -10px rgba(0,0,0,.75);
+  }
+  .cover-photo{
+    background: url(../images/background.png);
+    height: 160px;
+    width: 100%;
+    border-radius: 5px 5px 0 0;
+  }
+  .profile{
+    height: 120px;
+    width: 120px;
     border-radius: 50%;
-    margin: 5px;
-}
-
-.card .details{
-    margin: 10px;
-}
-
-.card .details h2{
-    font-weight: 600;
-}
-
-.card .details p{
-    text-transform: uppercase;
-    font-weight: 300;
-}
+    margin: 93px 0 0 -175px;
+    border: 1px solid #1f1a32;
+    padding: 7px;
+    background: #292343;
+  }
+  .profile-name{
+    font-size: 25px;
+    font-weight: bold;
+    margin: 27px 0 0 120px;
+  }
+  .about{
+    margin-top: 35px;
+    line-height: 21px;
+  }
+  button{
+    margin: 10px 0 40px 0;
+  }
+  .msg-btn, .follow-btn{
+    background: #03bfbc;
+    border: 1px solid #03bfbc;
+    padding: 10px 25px;
+    color: #231e39;
+    border-radius: 3px;
+    font-family: Montserrat, sans-serif;
+    cursor: pointer;
+  }
+  .follow-btn{
+    margin-left: 10px;
+    background: transparent;
+    color: #02899c;
+  }
+  .follow-btn:hover{
+    color: #231e39;
+    background: #03bfbc;
+    transition: .5s;
+  }
+  .container i{
+    padding-left: 20px;
+    font-size: 20px;
+    margin-bottom: 20px;
+    cursor: pointer;
+    transition: .5s;
+  }
+  .container i:hover{
+    color: #03bfbc;
+  }
+  
