@@ -12,14 +12,15 @@
 </head>
 <body>
     <div class="container">
-    <input name="name" type="text" class="feedback-input" placeholder="Nome" />   
-    <input name="email" type="text" class="feedback-input" placeholder="Email" />
-    <textarea name="text" class="feedback-input" placeholder="Mensagem"></textarea>
-    <input type="submit" value="Enviar"/>
-</div>
-<script src="assets/js/bootstrap.min.js"></script>
-<script src="assets/js/bootstrap.bundle.min.js.map"></script>
-<script src="assets/js/jquery-3.6.0.min.js"></script>
-
+        <form action="enviar.php" method="POST">
+            <input name="name" type="text" class="feedback-input" placeholder="Nome" required />   
+            <input name="email" type="email" class="feedback-input" placeholder="Email" required />
+            <textarea name="message" class="feedback-input" placeholder="Mensagem" required></textarea>
+            <input type="submit" value="Enviar"/>
+        </form>
+    </div>
+    <script src="assets/js/bootstrap.min.js"></script>
+    <script src="assets/js/bootstrap.bundle.min.js.map"></script>
+    <script src="assets/js/jquery-3.6.0.min.js"></script>
 </body>
 </html>
